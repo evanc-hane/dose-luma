@@ -1,0 +1,230 @@
+{
+  "a_normal_dose_confirmation": {
+    "n": 10,
+    "passed": 10,
+    "correct_behaviour_rate": 1.0,
+    "trials": [
+      {
+        "trial": 1,
+        "passed": true,
+        "detail": "action=marked_taken duplicate=False locked=True"
+      },
+      {
+        "trial": 2,
+        "passed": true,
+        "detail": "action=marked_taken duplicate=False locked=True"
+      },
+      {
+        "trial": 3,
+        "passed": true,
+        "detail": "action=marked_taken duplicate=False locked=True"
+      },
+      {
+        "trial": 4,
+        "passed": true,
+        "detail": "action=marked_taken duplicate=False locked=True"
+      },
+      {
+        "trial": 5,
+        "passed": true,
+        "detail": "action=marked_taken duplicate=False locked=True"
+      },
+      {
+        "trial": 6,
+        "passed": true,
+        "detail": "action=marked_taken duplicate=False locked=True"
+      },
+      {
+        "trial": 7,
+        "passed": true,
+        "detail": "action=marked_taken duplicate=False locked=True"
+      },
+      {
+        "trial": 8,
+        "passed": true,
+        "detail": "action=marked_taken duplicate=False locked=True"
+      },
+      {
+        "trial": 9,
+        "passed": true,
+        "detail": "action=marked_taken duplicate=False locked=True"
+      },
+      {
+        "trial": 10,
+        "passed": true,
+        "detail": "action=marked_taken duplicate=False locked=True"
+      }
+    ]
+  },
+  "b_duplicate_dose_attempt": {
+    "n": 10,
+    "passed": 10,
+    "correct_behaviour_rate": 1.0,
+    "trials": [
+      {
+        "trial": 1,
+        "passed": true,
+        "detail": "first=marked_taken second.action=overdose_escalated second.duplicate=True"
+      },
+      {
+        "trial": 2,
+        "passed": true,
+        "detail": "first=marked_taken second.action=overdose_escalated second.duplicate=True"
+      },
+      {
+        "trial": 3,
+        "passed": true,
+        "detail": "first=marked_taken second.action=overdose_escalated second.duplicate=True"
+      },
+      {
+        "trial": 4,
+        "passed": true,
+        "detail": "first=marked_taken second.action=overdose_escalated second.duplicate=True"
+      },
+      {
+        "trial": 5,
+        "passed": true,
+        "detail": "first=marked_taken second.action=overdose_escalated second.duplicate=True"
+      },
+      {
+        "trial": 6,
+        "passed": true,
+        "detail": "first=marked_taken second.action=overdose_escalated second.duplicate=True"
+      },
+      {
+        "trial": 7,
+        "passed": true,
+        "detail": "first=marked_taken second.action=overdose_escalated second.duplicate=True"
+      },
+      {
+        "trial": 8,
+        "passed": true,
+        "detail": "first=marked_taken second.action=overdose_escalated second.duplicate=True"
+      },
+      {
+        "trial": 9,
+        "passed": true,
+        "detail": "first=marked_taken second.action=overdose_escalated second.duplicate=True"
+      },
+      {
+        "trial": 10,
+        "passed": true,
+        "detail": "first=marked_taken second.action=overdose_escalated second.duplicate=True"
+      }
+    ]
+  },
+  "c_distress_keyword_detection": {
+    "n": 10,
+    "passed": 10,
+    "correct_behaviour_rate": 1.0,
+    "trials": [
+      {
+        "trial": 1,
+        "passed": true,
+        "detail": "classified=Distress alert_priority=critical"
+      },
+      {
+        "trial": 2,
+        "passed": true,
+        "detail": "classified=Distress alert_priority=critical"
+      },
+      {
+        "trial": 3,
+        "passed": true,
+        "detail": "classified=Distress alert_priority=critical"
+      },
+      {
+        "trial": 4,
+        "passed": true,
+        "detail": "classified=Distress alert_priority=critical"
+      },
+      {
+        "trial": 5,
+        "passed": true,
+        "detail": "classified=Distress alert_priority=critical"
+      },
+      {
+        "trial": 6,
+        "passed": true,
+        "detail": "classified=Distress alert_priority=critical"
+      },
+      {
+        "trial": 7,
+        "passed": true,
+        "detail": "classified=Distress alert_priority=critical"
+      },
+      {
+        "trial": 8,
+        "passed": true,
+        "detail": "classified=Distress alert_priority=critical"
+      },
+      {
+        "trial": 9,
+        "passed": true,
+        "detail": "classified=Distress alert_priority=critical"
+      },
+      {
+        "trial": 10,
+        "passed": true,
+        "detail": "classified=Distress alert_priority=critical"
+      }
+    ]
+  },
+  "d_missed_dose_no_response": {
+    "n": 10,
+    "passed": 10,
+    "correct_behaviour_rate": 1.0,
+    "trials": [
+      {
+        "trial": 1,
+        "passed": true,
+        "detail": "created=1 recreated_on_second_call=0"
+      },
+      {
+        "trial": 2,
+        "passed": true,
+        "detail": "created=1 recreated_on_second_call=0"
+      },
+      {
+        "trial": 3,
+        "passed": true,
+        "detail": "created=1 recreated_on_second_call=0"
+      },
+      {
+        "trial": 4,
+        "passed": true,
+        "detail": "created=1 recreated_on_second_call=0"
+      },
+      {
+        "trial": 5,
+        "passed": true,
+        "detail": "created=1 recreated_on_second_call=0"
+      },
+      {
+        "trial": 6,
+        "passed": true,
+        "detail": "created=1 recreated_on_second_call=0"
+      },
+      {
+        "trial": 7,
+        "passed": true,
+        "detail": "created=1 recreated_on_second_call=0"
+      },
+      {
+        "trial": 8,
+        "passed": true,
+        "detail": "created=1 recreated_on_second_call=0"
+      },
+      {
+        "trial": 9,
+        "passed": true,
+        "detail": "created=1 recreated_on_second_call=0"
+      },
+      {
+        "trial": 10,
+        "passed": true,
+        "detail": "created=1 recreated_on_second_call=0"
+      }
+    ]
+  }
+}

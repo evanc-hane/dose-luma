@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>$(PRODUCT_NAME)</string>
+	<key>CFBundlePackageType</key>
+	<string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>doseluma-callback</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>doseluma</string>
+			</array>
+		</dict>
+	</array>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+		<key>NSAllowsLocalNetworking</key>
+		<true/>
+	</dict>
+	<key>NSBonjourServices</key>
+	<array>
+		<string>_doseluma._tcp</string>
+	</array>
+	<key>NSCameraUsageDescription</key>
+	<string>DoseLuma uses the camera to scan pill shapes and read medication labels (OCR) for identification.</string>
+	<key>NSHealthShareUsageDescription</key>
+	<string>DoseLuma reads heart rate, oxygen saturation, and heart rate variability from HealthKit to monitor your vitals.</string>
+	<key>NSHealthUpdateUsageDescription</key>
+	<string>DoseLuma may sync health data to your private server for medication adherence monitoring.</string>
+	<key>NSLocalNetworkUsageDescription</key>
+	<string>DoseLuma discovers the DoseLuma server on your local network to connect automatically.</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>DoseLuma uses the microphone so you can talk with the ALI voice assistant during medication check-ins.</string>
+	<key>UIApplicationSceneManifest</key>
+	<dict>
+		<key>UIApplicationSupportsMultipleScenes</key>
+		<false/>
+	</dict>
+	<key>UILaunchScreen</key>
+	<dict/>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+	</array>
+</dict>
+</plist>

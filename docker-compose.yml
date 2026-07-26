@@ -1,0 +1,76 @@
+services:
+  # Optional local OpenAI-compatible STT/TTS service.
+  speaches:
+    profiles: ["local-speech"]
+    build:
+      context: ./docker
+      dockerfile: speaches.Dockerfile
+    ports:
+      - "8000:8000"
+    volumes:
+      - speaches-cache:/home/ubuntu/.cache/huggingface/hub
+
+  # WebRTC signaling and media.
+  livekit:
+    image: livekit/livekit-server:latest
+    ports:
+      - "7880:7880"
+      - "7881:7881"
+      - "7882:7882/udp"
+    environment:
+      - LIVEKIT_API_KEY=devkey
+      - LIVEKIT_API_SECRET=secret
+    volumes:
+      - ./app/backend/livekit.yaml:/etc/livekit.yaml
+    command: --config /etc/livekit.yaml --node-ip=${LIVEKIT_NODE_IP:-127.0.0.1}
+
+  # Application state and inference API.
+  backend:
+    build:
+      context: ./app/backend
+      dockerfile: Dockerfile.backend
+    ports:
+      - "8801:8801"
+    depends_on:
+      - livekit
+    environment:
+      # LIVEKIT_URL advertised to mobile clients (must be reachable from device/simulator)
+      # Use ws://localhost:7880 for simulator, ws://<host-ip>:7880 for physical device
+      - LIVEKIT_URL=ws://localhost:7880
+      - LIVEKIT_API_KEY=devkey
+      - LIVEKIT_API_SECRET=secret
+      - LIVEKIT_INTERNAL_URL=ws://livekit:7880
+      - CEREBRAS_API_KEY=${CEREBRAS_API_KEY:-}
+      - ELEVEN_API_KEY=${ELEVEN_API_KEY:-}
+      - OPENROUTER_API_KEY=${OPENROUTER_API_KEY:-}
+      - LLM_API_KEY=${LLM_API_KEY:-}
+      - ALLOWED_ORIGINS=${ALLOWED_ORIGINS:-http://localhost:3000,http://127.0.0.1:3000}
+      - DEBUG=False
+      - WEB_SERVER_DISABLED=1
+      - MODEL_CONFIG_PATH=/config/config.json
+    volumes:
+      - ./config.json:/config/config.json:ro
+
+  # Real-time STT -> LLM -> TTS worker.
+  agent:
+    build:
+      context: ./app
+      dockerfile: agent/Dockerfile
+    depends_on:
+      - livekit
+      - backend
+    environment:
+      - LIVEKIT_URL=ws://livekit:7880
+      - LIVEKIT_API_KEY=devkey
+      - LIVEKIT_API_SECRET=secret
+      - LIVEKIT_AGENT_NAME=AI-LiveKit-Agent
+      - CEREBRAS_API_KEY=${CEREBRAS_API_KEY:-}
+      - ELEVEN_API_KEY=${ELEVEN_API_KEY:-}
+      - OPENROUTER_API_KEY=${OPENROUTER_API_KEY:-}
+      - LLM_API_KEY=${LLM_API_KEY:-}
+      - MODEL_CONFIG_PATH=/config/config.json
+    volumes:
+      - ./config.json:/config/config.json:ro
+
+volumes:
+  speaches-cache:

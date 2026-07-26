@@ -1,0 +1,31 @@
+{
+  "stt": {
+    "component": "STT",
+    "n": 10,
+    "mean_ms": 784.3,
+    "p95_ms": 965.1,
+    "min_ms": 585.4,
+    "max_ms": 1230.6
+  },
+  "llm": {
+    "component": "LLM",
+    "n": 10,
+    "mean_ms": 301.6,
+    "p95_ms": 470.2,
+    "min_ms": 170.1,
+    "max_ms": 849.6
+  },
+  "tts": {
+    "component": "TTS",
+    "n": 10,
+    "mean_ms": 273.8,
+    "p95_ms": 331.0,
+    "min_ms": 230.5,
+    "max_ms": 368.4
+  },
+  "total_mean_ms": 1359.7,
+  "meets_target_400ms": false,
+  "meets_max_700ms": false,
+  "stack": "Cerebras (gpt-oss-120b) + ElevenLabs (scribe_v1 STT, eleven_turbo_v2_5 TTS)",
+  "caveat": "Measured over the real internet connection this machine has right now, single-process HTTP round-trips (not the streaming LiveKit pipeline's internal TTFT/TTFB timers, which are typically lower) \u2014 the report's Testing Goal 2 additionally asks for 3 simulated network conditions (100/5/1 Mbps traffic shaping), which this script does not perform."
+}

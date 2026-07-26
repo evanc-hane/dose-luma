@@ -1,0 +1,51 @@
+# ── Secrets & generated data (never commit) ───────────────────────────────────
+backend/.env
+backend/certs/
+backend/data/
+backend/doseluma.db
+backend/__pycache__/
+backend/.venv/
+backend/uv.lock
+
+backend-go/.env
+backend-go/data/
+backend-go/doseluma-server
+
+# ── macOS ─────────────────────────────────────────────────────────────────────
+.DS_Store
+**/.DS_Store
+
+# ── Xcode ─────────────────────────────────────────────────────────────────────
+xcuserdata/
+*.xcuserstate
+DerivedData/
+*.xccheckout
+*.moved-aside
+*.pbxuser
+!default.pbxuser
+*.mode1v2
+!default.mode1v2
+*.mode2v2
+!default.mode2v2
+*.perspectivev3
+!default.perspectivev3
+
+# ── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+
+# ── Go ────────────────────────────────────────────────────────────────────────
+backend-go/doseluma-server
+backend-go/docker/doseluma
+
+# ── Build artifacts ──────────────────────────────────────────────────────────
+build/
+
+# ── C# / .NET ────────────────────────────────────────────────────────────────
+bin/
+obj/
+.vs/
+*.user
+*.suo

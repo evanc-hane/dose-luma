@@ -1,0 +1,34 @@
+[project]
+name = "dose-luma-backend"
+version = "0.1.0"
+description = "FastAPI backend for the DoseLuma medication-assistance application"
+authors = [
+    { name = "Evan Cui", email = "evan.cui1022@gmail.com" },
+]
+license = "MIT"
+keywords = ["machine-learning", "llm", "mlops", "healthcare", "fastapi"]
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi>=0.110.0",
+    "uvicorn>=0.29.0",
+    "pydantic>=2.6.0",
+    "python-dotenv>=1.2.2",
+    "requests>=2.32.0",
+    "boto3>=1.34.0",
+    "torch>=2.12.1",
+    "torchaudio>=2.11.0",
+    "pydub>=0.25.1",
+    "SpeechRecognition>=3.10.1",
+    "numpy>=2.1.0",
+    "langchain>=1.3.9",
+    "langchain-community>=0.4.0",
+    "python-multipart>=0.0.32",
+    "cryptography>=48.0.1",
+    "livekit-api>=1.1.1",
+    "livekit-agents>=1.0.0",
+    "livekit-plugins-openai>=1.0.0",
+    "livekit-plugins-elevenlabs>=1.0.0",
+    "livekit-plugins-silero>=1.0.0",
+    "pyjwt>=2.13.0",
+    "apscheduler>=3.11.3",
+]

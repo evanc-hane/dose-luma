@@ -1,0 +1,22 @@
+[
+  {"transcript": "Yes, I took it already", "label": "Taken"},
+  {"transcript": "I just took my pills", "label": "Taken"},
+  {"transcript": "All done, I have taken them", "label": "Taken"},
+  {"transcript": "Yes I did", "label": "Taken"},
+  {"transcript": "I finished my medication", "label": "Taken"},
+  {"transcript": "No, I won't take it", "label": "Refused"},
+  {"transcript": "I refuse to take those pills", "label": "Refused"},
+  {"transcript": "I don't want to take it", "label": "Refused"},
+  {"transcript": "I will take it later", "label": "Delayed"},
+  {"transcript": "Not yet, remind me in an hour", "label": "Delayed"},
+  {"transcript": "I'll take them after lunch", "label": "Delayed"},
+  {"transcript": "I'm not sure which pill to take", "label": "Confused"},
+  {"transcript": "I'm confused about the medication", "label": "Confused"},
+  {"transcript": "I don't know what I should do", "label": "Confused"},
+  {"transcript": "I'm scared and it hurts", "label": "Distress"},
+  {"transcript": "Please help, I fell", "label": "Distress"},
+  {"transcript": "I have chest pain, emergency", "label": "Distress"},
+  {"transcript": "I already took it this morning", "label": "Taken"},
+  {"transcript": "No I will not take another dose", "label": "Refused"},
+  {"transcript": "Wait, maybe later soon", "label": "Delayed"}
+]

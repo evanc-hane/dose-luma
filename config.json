@@ -1,0 +1,62 @@
+{
+  "agent": {
+    "name": "AI-LiveKit-Agent",
+    "room": "doseluma-room",
+    "greet_on_start": true,
+    "greeting_mode": "auto",
+    "greeting_templates": {
+      "reminder_call": [
+        "Hi {name}, this is ALI calling with your medication reminder. Have you taken your scheduled medication today?",
+        "Hello {name}, it's time for your medication check-in. Have you taken your pills?",
+        "Good afternoon {name}, this is ALI. I'm calling to remind you about your medication. Did you take it yet?"
+      ],
+      "web_session": [
+        "Hello {name}! It's ALI — how are you doing today?",
+        "Hi {name}! Good to hear from you — how are you?",
+        "Welcome {name}! How's your day going so far?"
+      ],
+      "user_initiated": [
+        "Hi {name}! It's ALI — how are you doing today?",
+        "Hello {name}! How are you feeling?",
+        "Hi {name}! Good to hear from you — how's it going?"
+      ]
+    }
+  },
+  "services": {
+    "llm": {
+      "provider": "cerebras",
+      "base_url": "https://api.cerebras.ai/v1"
+    },
+    "speech": {
+      "provider": "speaches",
+      "base_url": "http://localhost:8000/v1"
+    }
+  },
+  "stt": {
+    "provider": "elevenlabs",
+    "model_id": "scribe_v1"
+  },
+  "llm": {
+    "model": "gpt-oss-120b",
+    "fallback_contains": "Qwythos"
+  },
+  "tts": {
+    "provider": "elevenlabs",
+    "voice_id": "VLLzovo0OYWgnZpaNLuq",
+    "model": "eleven_turbo_v2_5",
+    "stability": 0.5,
+    "similarity_boost": 0.75,
+    "speed": 0.85
+  },
+  "vad": {
+    "provider": "silero",
+    "min_silence_duration": 0.9,
+    "activation_threshold": 0.4,
+    "prefix_padding_duration": 0.6
+  },
+  "reminders": {
+    "enabled": true,
+    "times": ["08:00", "08:05", "08:10", "08:15", "08:20", "08:25"],
+    "message": "Time for your medication check-in with ALI"
+  }
+}

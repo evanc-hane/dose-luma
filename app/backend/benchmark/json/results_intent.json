@@ -1,0 +1,1554 @@
+{
+  "heuristic": {
+    "method": "heuristic",
+    "n": 100,
+    "correct": 61,
+    "accuracy": 0.61,
+    "meets_target_85pct": false,
+    "meets_minimum_80pct": false,
+    "mean_latency_ms": 0.0,
+    "p95_latency_ms": 0.0,
+    "per_class": {
+      "Taken": {
+        "precision": 0.909,
+        "recall": 0.5,
+        "f1": 0.645
+      },
+      "Refused": {
+        "precision": 1.0,
+        "recall": 0.35,
+        "f1": 0.519
+      },
+      "Delayed": {
+        "precision": 0.846,
+        "recall": 0.55,
+        "f1": 0.667
+      },
+      "Confused": {
+        "precision": 0.333,
+        "recall": 0.9,
+        "f1": 0.486
+      },
+      "Distress": {
+        "precision": 1.0,
+        "recall": 0.75,
+        "f1": 0.857
+      }
+    },
+    "confusion_matrix": {
+      "Taken": {
+        "Taken": 10,
+        "Refused": 0,
+        "Delayed": 1,
+        "Confused": 9,
+        "Distress": 0
+      },
+      "Refused": {
+        "Taken": 0,
+        "Refused": 7,
+        "Delayed": 0,
+        "Confused": 13,
+        "Distress": 0
+      },
+      "Delayed": {
+        "Taken": 0,
+        "Refused": 0,
+        "Delayed": 11,
+        "Confused": 9,
+        "Distress": 0
+      },
+      "Confused": {
+        "Taken": 1,
+        "Refused": 0,
+        "Delayed": 1,
+        "Confused": 18,
+        "Distress": 0
+      },
+      "Distress": {
+        "Taken": 0,
+        "Refused": 0,
+        "Delayed": 0,
+        "Confused": 5,
+        "Distress": 15
+      }
+    },
+    "rows": [
+      {
+        "transcript": "Yes, I took it already",
+        "expected": "Taken",
+        "predicted": "Taken",
+        "correct": true,
+        "latency_ms": 0.0
+      },
+      {
+        "transcript": "I just took my pills",
+        "expected": "Taken",
+        "predicted": "Taken",
+        "correct": true,
+        "latency_ms": 0.0
+      },
+      {
+        "transcript": "All done, I have taken them",
+        "expected": "Taken",
+        "predicted": "Taken",
+        "correct": true,
+        "latency_ms": 0.0
+      },
+      {
+        "transcript": "Yes I did",
+        "expected": "Taken",
+        "predicted": "Taken",
+        "correct": true,
+        "latency_ms": 0.0
+      },
+      {
+        "transcript": "I finished my medication",
+        "expected": "Taken",
+        "predicted": "Taken",
+        "correct": true,
+        "latency_ms": 0.0
+      },
+      {
+        "transcript": "I already took it this morning",
+        "expected": "Taken",
+        "predicted": "Taken",
+        "correct": true,
+        "latency_ms": 0.0
+      },
+      {
+        "transcript": "Oh yes, I swallowed it with my coffee",
+        "expected": "Taken",
+        "predicted": "Taken",
+        "correct": true,
+        "latency_ms": 0.0
+      },
+      {
+        "transcript": "Took care of that a little while ago",
+        "expected": "Taken",
+        "predicted": "Confused",
+        "correct": false,
+        "latency_ms": 0.0
+      },
+      {
+        "transcript": "Mhm, done and done",
+        "expected": "Taken",
+        "predicted": "Confused",
+        "correct": false,
+        "latency_ms": 0.0
+      },
+      {
+        "transcript": "I had it with breakfast",
+        "expected": "Taken",
+        "predicted": "Confused",
+        "correct": false,
+        "latency_ms": 0.0
+      },
+      {
+        "transcript": "Sure did, right after I got up",
+        "expected": "Taken",
+        "predicted": "Delayed",
+        "correct": false,
+        "latency_ms": 0.0
+      },
+      {
+        "transcript": "Yep, that's taken care of",
+        "expected": "Taken",
+        "predicted": "Taken",
+        "correct": true,
+        "latency_ms": 0.0
+      },
+      {
+        "transcript": "I popped the pill about an hour ago",
+        "expected": "Taken",
+        "predicted": "Confused",
+        "correct": false,
+        "latency_ms": 0.0
+      },
+      {
+        "transcript": "Already did that, dear",
+        "expected": "Taken",
+        "predicted": "Confused",
+        "correct": false,
+        "latency_ms": 0.0
+      },
+      {
+        "transcript": "Consider it done",
+        "expected": "Taken",
+        "predicted": "Confused",
+        "correct": false,
+        "latency_ms": 0.0
+      },
+      {
+        "transcript": "I had my tablets with some water just now",
+        "expected": "Taken",
+        "predicted": "Confused",
+        "correct": false,
+        "latency_ms": 0.0
+      },
+      {
+        "transcript": "Yes, washed it down already",
+        "expected": "Taken",
+        "predicted": "Taken",
+        "correct": true,
+        "latency_ms": 0.0
+      },
+      {
+        "transcript": "Took my medicine right on schedule",
+        "expected": "Taken",
+        "predicted": "Confused",
+        "correct": false,
+        "latency_ms": 0.0
+      },
+      {
+        "transcript": "I remembered this time, took it",
+        "expected": "Taken",
+        "predicted": "Taken",
+        "correct": true,
+        "latency_ms": 0.0
+      },
+      {
+        "transcript": "Just swallowed the last one",
+        "expected": "Taken",
+        "predicted": "Confused",
+        "correct": false,
+        "latency_ms": 0.0
+      },
+      {
+        "transcript": "No, I won't take it",
+        "expected": "Refused",
+        "predicted": "Refused",
+        "correct": true,
+        "latency_ms": 0.0
+      },
+      {
+        "transcript": "I refuse to take those pills",
+        "expected": "Refused",
+        "predicted": "Refused",
+        "correct": true,
+        "latency_ms": 0.0
+      },
+      {
+        "transcript": "I don't want to take it",
+        "expected": "Refused",
+        "predicted": "Refused",
+        "correct": true,
+        "latency_ms": 0.0
+      },
+      {
+        "transcript": "No I will not take another dose",
+        "expected": "Refused",
+        "predicted": "Refused",
+        "correct": true,
+        "latency_ms": 0.0
+      },
+      {
+        "transcript": "I'm not taking that today",
+        "expected": "Refused",
+        "predicted": "Refused",
+        "correct": true,
+        "latency_ms": 0.0
+      },
+      {
+        "transcript": "Absolutely not, I don't like how it makes me feel",
+        "expected": "Refused",
+        "predicted": "Confused",
+        "correct": false,
+        "latency_ms": 0.0
+      },
+      {
+        "transcript": "No thank you, I'll pass on that one",
+        "expected": "Refused",
+        "predicted": "Confused",
+        "correct": false,
+        "latency_ms": 0.0
+      },
+      {
+        "transcript": "I've decided I'm done with those pills",
+        "expected": "Refused",
+        "predicted": "Confused",
+        "correct": false,
+        "latency_ms": 0.0
+      },
+      {
+        "transcript": "Not interested, no",
+        "expected": "Refused",
+        "predicted": "Confused",
+        "correct": false,
+        "latency_ms": 0.0
+      },
+      {
+        "transcript": "I won't be taking my medicine tonight",
+        "expected": "Refused",
+        "predicted": "Refused",
+        "correct": true,
+        "latency_ms": 0.0
+      },
+      {
+        "transcript": "I don't think so, not today",
+        "expected": "Refused",
+        "predicted": "Confused",
+        "correct": false,
+        "latency_ms": 0.0
+      },
+      {
+        "transcript": "No way, that pill upsets my stomach",
+        "expected": "Refused",
+        "predicted": "Confused",
+        "correct": false,
+        "latency_ms": 0.0
+      },
+      {
+        "transcript": "I'm skipping this one on purpose",
+        "expected": "Refused",
+        "predicted": "Confused",
+        "correct": false,
+        "latency_ms": 0.0
+      },
+      {
+        "transcript": "I said no already",
+        "expected": "Refused",
+        "predicted": "Confused",
+        "correct": false,
+        "latency_ms": 0.0
+      },
+      {
+        "transcript": "I'd rather not, thank you",
+        "expected": "Refused",
+        "predicted": "Confused",
+        "correct": false,
+        "latency_ms": 0.0
+      },
+      {
+        "transcript": "Nope, not touching those",
+        "expected": "Refused",
+        "predicted": "Confused",
+        "correct": false,
+        "latency_ms": 0.0
+      },
+      {
+        "transcript": "I'm choosing not to take it",
+        "expected": "Refused",
+        "predicted": "Confused",
+        "correct": false,
+        "latency_ms": 0.0
+      },
+      {
+        "transcript": "No dice, I don't want it",
+        "expected": "Refused",
+        "predicted": "Refused",
+        "correct": true,
+        "latency_ms": 0.0
+      },
+      {
+        "transcript": "I'm refusing my medication today",
+        "expected": "Refused",
+        "predicted": "Confused",
+        "correct": false,
+        "latency_ms": 0.0
+      },
+      {
+        "transcript": "Not now, not ever with that one",
+        "expected": "Refused",
+        "predicted": "Confused",
+        "correct": false,
+        "latency_ms": 0.0
+      },
+      {
+        "transcript": "I will take it later",
+        "expected": "Delayed",
+        "predicted": "Delayed",
+        "correct": true,
+        "latency_ms": 0.0
+      },
+      {
+        "transcript": "Not yet, remind me in an hour",
+        "expected": "Delayed",
+        "predicted": "Delayed",
+        "correct": true,
+        "latency_ms": 0.0
+      },
+      {
+        "transcript": "I'll take them after lunch",
+        "expected": "Delayed",
+        "predicted": "Delayed",
+        "correct": true,
+        "latency_ms": 0.0
+      },
+      {
+        "transcript": "Wait, maybe later soon",
+        "expected": "Delayed",
+        "predicted": "Delayed",
+        "correct": true,
+        "latency_ms": 0.0
+      },
+      {
+        "transcript": "Give me a bit, I'll get to it",
+        "expected": "Delayed",
+        "predicted": "Confused",
+        "correct": false,
+        "latency_ms": 0.0
+      },
+      {
+        "transcript": "In a little while, I promise",
+        "expected": "Delayed",
+        "predicted": "Confused",
+        "correct": false,
+        "latency_ms": 0.0
+      },
+      {
+        "transcript": "Let me finish my show first",
+        "expected": "Delayed",
+        "predicted": "Confused",
+        "correct": false,
+        "latency_ms": 0.0
+      },
+      {
+        "transcript": "I'll take it once I'm done eating",
+        "expected": "Delayed",
+        "predicted": "Confused",
+        "correct": false,
+        "latency_ms": 0.0
+      },
+      {
+        "transcript": "Later on, not right now",
+        "expected": "Delayed",
+        "predicted": "Delayed",
+        "correct": true,
+        "latency_ms": 0.0
+      },
+      {
+        "transcript": "Ask me again after my nap",
+        "expected": "Delayed",
+        "predicted": "Delayed",
+        "correct": true,
+        "latency_ms": 0.0
+      },
+      {
+        "transcript": "I'm not ready yet, soon though",
+        "expected": "Delayed",
+        "predicted": "Delayed",
+        "correct": true,
+        "latency_ms": 0.0
+      },
+      {
+        "transcript": "Hold that thought, I'll do it in a minute",
+        "expected": "Delayed",
+        "predicted": "Confused",
+        "correct": false,
+        "latency_ms": 0.0
+      },
+      {
+        "transcript": "I'll get to it in a bit",
+        "expected": "Delayed",
+        "predicted": "Delayed",
+        "correct": true,
+        "latency_ms": 0.0
+      },
+      {
+        "transcript": "After I walk the dog",
+        "expected": "Delayed",
+        "predicted": "Delayed",
+        "correct": true,
+        "latency_ms": 0.0
+      },
+      {
+        "transcript": "Not this second, but soon",
+        "expected": "Delayed",
+        "predicted": "Delayed",
+        "correct": true,
+        "latency_ms": 0.0
+      },
+      {
+        "transcript": "I'll take it before bed instead",
+        "expected": "Delayed",
+        "predicted": "Confused",
+        "correct": false,
+        "latency_ms": 0.0
+      },
+      {
+        "transcript": "Give me an hour or so",
+        "expected": "Delayed",
+        "predicted": "Confused",
+        "correct": false,
+        "latency_ms": 0.0
+      },
+      {
+        "transcript": "I want to eat something first",
+        "expected": "Delayed",
+        "predicted": "Confused",
+        "correct": false,
+        "latency_ms": 0.0
+      },
+      {
+        "transcript": "Later today, I haven't forgotten",
+        "expected": "Delayed",
+        "predicted": "Delayed",
+        "correct": true,
+        "latency_ms": 0.0
+      },
+      {
+        "transcript": "I'll do it once my daughter calls",
+        "expected": "Delayed",
+        "predicted": "Confused",
+        "correct": false,
+        "latency_ms": 0.0
+      },
+      {
+        "transcript": "I'm not sure which pill to take",
+        "expected": "Confused",
+        "predicted": "Confused",
+        "correct": true,
+        "latency_ms": 0.0
+      },
+      {
+        "transcript": "I'm confused about the medication",
+        "expected": "Confused",
+        "predicted": "Confused",
+        "correct": true,
+        "latency_ms": 0.0
+      },
+      {
+        "transcript": "I don't know what I should do",
+        "expected": "Confused",
+        "predicted": "Confused",
+        "correct": true,
+        "latency_ms": 0.0
+      },
+      {
+        "transcript": "Which one am I supposed to take again?",
+        "expected": "Confused",
+        "predicted": "Confused",
+        "correct": true,
+        "latency_ms": 0.0
+      },
+      {
+        "transcript": "I forgot which pill goes with breakfast",
+        "expected": "Confused",
+        "predicted": "Confused",
+        "correct": true,
+        "latency_ms": 0.0
+      },
+      {
+        "transcript": "I'm not sure what these are for",
+        "expected": "Confused",
+        "predicted": "Confused",
+        "correct": true,
+        "latency_ms": 0.0
+      },
+      {
+        "transcript": "Wait, is this the same one as yesterday?",
+        "expected": "Confused",
+        "predicted": "Delayed",
+        "correct": false,
+        "latency_ms": 0.0
+      },
+      {
+        "transcript": "I can't remember if I already took something",
+        "expected": "Confused",
+        "predicted": "Taken",
+        "correct": false,
+        "latency_ms": 0.0
+      },
+      {
+        "transcript": "There are so many pills, I don't know",
+        "expected": "Confused",
+        "predicted": "Confused",
+        "correct": true,
+        "latency_ms": 0.0
+      },
+      {
+        "transcript": "What is this white one again?",
+        "expected": "Confused",
+        "predicted": "Confused",
+        "correct": true,
+        "latency_ms": 0.0
+      },
+      {
+        "transcript": "I don't understand the instructions",
+        "expected": "Confused",
+        "predicted": "Confused",
+        "correct": true,
+        "latency_ms": 0.0
+      },
+      {
+        "transcript": "Is it the little blue one or the big one?",
+        "expected": "Confused",
+        "predicted": "Confused",
+        "correct": true,
+        "latency_ms": 0.0
+      },
+      {
+        "transcript": "I'm mixed up about my schedule",
+        "expected": "Confused",
+        "predicted": "Confused",
+        "correct": true,
+        "latency_ms": 0.0
+      },
+      {
+        "transcript": "Did the doctor say morning or night for this?",
+        "expected": "Confused",
+        "predicted": "Confused",
+        "correct": true,
+        "latency_ms": 0.0
+      },
+      {
+        "transcript": "I'm lost, which bottle is it",
+        "expected": "Confused",
+        "predicted": "Confused",
+        "correct": true,
+        "latency_ms": 0.0
+      },
+      {
+        "transcript": "Hmm, I can't tell these apart",
+        "expected": "Confused",
+        "predicted": "Confused",
+        "correct": true,
+        "latency_ms": 0.0
+      },
+      {
+        "transcript": "I don't remember what I'm supposed to do",
+        "expected": "Confused",
+        "predicted": "Confused",
+        "correct": true,
+        "latency_ms": 0.0
+      },
+      {
+        "transcript": "Something's not right, I'm not sure what to do",
+        "expected": "Confused",
+        "predicted": "Confused",
+        "correct": true,
+        "latency_ms": 0.0
+      },
+      {
+        "transcript": "I keep getting them mixed up",
+        "expected": "Confused",
+        "predicted": "Confused",
+        "correct": true,
+        "latency_ms": 0.0
+      },
+      {
+        "transcript": "Not sure honestly, can you remind me",
+        "expected": "Confused",
+        "predicted": "Confused",
+        "correct": true,
+        "latency_ms": 0.0
+      },
+      {
+        "transcript": "I'm scared and it hurts",
+        "expected": "Distress",
+        "predicted": "Distress",
+        "correct": true,
+        "latency_ms": 0.0
+      },
+      {
+        "transcript": "Please help, I fell",
+        "expected": "Distress",
+        "predicted": "Distress",
+        "correct": true,
+        "latency_ms": 0.0
+      },
+      {
+        "transcript": "I have chest pain, emergency",
+        "expected": "Distress",
+        "predicted": "Distress",
+        "correct": true,
+        "latency_ms": 0.0
+      },
+      {
+        "transcript": "I don't feel right, something is wrong",
+        "expected": "Distress",
+        "predicted": "Confused",
+        "correct": false,
+        "latency_ms": 0.0
+      },
+      {
+        "transcript": "I'm in so much pain right now",
+        "expected": "Distress",
+        "predicted": "Distress",
+        "correct": true,
+        "latency_ms": 0.0
+      },
+      {
+        "transcript": "Help me, I can't breathe",
+        "expected": "Distress",
+        "predicted": "Distress",
+        "correct": true,
+        "latency_ms": 0.0
+      },
+      {
+        "transcript": "I'm really scared, please call someone",
+        "expected": "Distress",
+        "predicted": "Distress",
+        "correct": true,
+        "latency_ms": 0.0
+      },
+      {
+        "transcript": "Everything hurts, I'm afraid",
+        "expected": "Distress",
+        "predicted": "Distress",
+        "correct": true,
+        "latency_ms": 0.0
+      },
+      {
+        "transcript": "I think something bad is happening",
+        "expected": "Distress",
+        "predicted": "Confused",
+        "correct": false,
+        "latency_ms": 0.0
+      },
+      {
+        "transcript": "My heart is racing and I'm frightened",
+        "expected": "Distress",
+        "predicted": "Confused",
+        "correct": false,
+        "latency_ms": 0.0
+      },
+      {
+        "transcript": "I need help right now",
+        "expected": "Distress",
+        "predicted": "Distress",
+        "correct": true,
+        "latency_ms": 0.0
+      },
+      {
+        "transcript": "I'm dizzy and scared",
+        "expected": "Distress",
+        "predicted": "Distress",
+        "correct": true,
+        "latency_ms": 0.0
+      },
+      {
+        "transcript": "This is an emergency, please",
+        "expected": "Distress",
+        "predicted": "Distress",
+        "correct": true,
+        "latency_ms": 0.0
+      },
+      {
+        "transcript": "I fell down and I can't get up",
+        "expected": "Distress",
+        "predicted": "Distress",
+        "correct": true,
+        "latency_ms": 0.0
+      },
+      {
+        "transcript": "I'm in terrible pain",
+        "expected": "Distress",
+        "predicted": "Distress",
+        "correct": true,
+        "latency_ms": 0.0
+      },
+      {
+        "transcript": "Something feels very wrong",
+        "expected": "Distress",
+        "predicted": "Confused",
+        "correct": false,
+        "latency_ms": 0.0
+      },
+      {
+        "transcript": "I'm frightened, this doesn't feel normal",
+        "expected": "Distress",
+        "predicted": "Confused",
+        "correct": false,
+        "latency_ms": 0.0
+      },
+      {
+        "transcript": "Please, I really need help",
+        "expected": "Distress",
+        "predicted": "Distress",
+        "correct": true,
+        "latency_ms": 0.0
+      },
+      {
+        "transcript": "I can't feel my arm, I'm scared",
+        "expected": "Distress",
+        "predicted": "Distress",
+        "correct": true,
+        "latency_ms": 0.0
+      },
+      {
+        "transcript": "It hurts so much, please help me",
+        "expected": "Distress",
+        "predicted": "Distress",
+        "correct": true,
+        "latency_ms": 0.0
+      }
+    ]
+  },
+  "llm": {
+    "method": "llm",
+    "n": 100,
+    "correct": 98,
+    "accuracy": 0.98,
+    "meets_target_85pct": true,
+    "meets_minimum_80pct": true,
+    "mean_latency_ms": 17860.0,
+    "p95_latency_ms": 28158.5,
+    "per_class": {
+      "Taken": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "Refused": {
+        "precision": 1.0,
+        "recall": 0.95,
+        "f1": 0.974
+      },
+      "Delayed": {
+        "precision": 1.0,
+        "recall": 0.95,
+        "f1": 0.974
+      },
+      "Confused": {
+        "precision": 0.909,
+        "recall": 1.0,
+        "f1": 0.952
+      },
+      "Distress": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      }
+    },
+    "confusion_matrix": {
+      "Taken": {
+        "Taken": 20,
+        "Refused": 0,
+        "Delayed": 0,
+        "Confused": 0,
+        "Distress": 0
+      },
+      "Refused": {
+        "Taken": 0,
+        "Refused": 19,
+        "Delayed": 0,
+        "Confused": 1,
+        "Distress": 0
+      },
+      "Delayed": {
+        "Taken": 0,
+        "Refused": 0,
+        "Delayed": 19,
+        "Confused": 1,
+        "Distress": 0
+      },
+      "Confused": {
+        "Taken": 0,
+        "Refused": 0,
+        "Delayed": 0,
+        "Confused": 20,
+        "Distress": 0
+      },
+      "Distress": {
+        "Taken": 0,
+        "Refused": 0,
+        "Delayed": 0,
+        "Confused": 0,
+        "Distress": 20
+      }
+    },
+    "rows": [
+      {
+        "transcript": "Yes, I took it already",
+        "expected": "Taken",
+        "predicted": "Taken",
+        "correct": true,
+        "latency_ms": 10296.6
+      },
+      {
+        "transcript": "I just took my pills",
+        "expected": "Taken",
+        "predicted": "Taken",
+        "correct": true,
+        "latency_ms": 12177.4
+      },
+      {
+        "transcript": "All done, I have taken them",
+        "expected": "Taken",
+        "predicted": "Taken",
+        "correct": true,
+        "latency_ms": 13911.7
+      },
+      {
+        "transcript": "Yes I did",
+        "expected": "Taken",
+        "predicted": "Taken",
+        "correct": true,
+        "latency_ms": 16734.8
+      },
+      {
+        "transcript": "I finished my medication",
+        "expected": "Taken",
+        "predicted": "Taken",
+        "correct": true,
+        "latency_ms": 16036.6
+      },
+      {
+        "transcript": "I already took it this morning",
+        "expected": "Taken",
+        "predicted": "Taken",
+        "correct": true,
+        "latency_ms": 22809.6
+      },
+      {
+        "transcript": "Oh yes, I swallowed it with my coffee",
+        "expected": "Taken",
+        "predicted": "Taken",
+        "correct": true,
+        "latency_ms": 30003.3
+      },
+      {
+        "transcript": "Took care of that a little while ago",
+        "expected": "Taken",
+        "predicted": "Taken",
+        "correct": true,
+        "latency_ms": 28158.5
+      },
+      {
+        "transcript": "Mhm, done and done",
+        "expected": "Taken",
+        "predicted": "Taken",
+        "correct": true,
+        "latency_ms": 17856.9
+      },
+      {
+        "transcript": "I had it with breakfast",
+        "expected": "Taken",
+        "predicted": "Taken",
+        "correct": true,
+        "latency_ms": 17209.1
+      },
+      {
+        "transcript": "Sure did, right after I got up",
+        "expected": "Taken",
+        "predicted": "Taken",
+        "correct": true,
+        "latency_ms": 23420.1
+      },
+      {
+        "transcript": "Yep, that's taken care of",
+        "expected": "Taken",
+        "predicted": "Taken",
+        "correct": true,
+        "latency_ms": 13643.7
+      },
+      {
+        "transcript": "I popped the pill about an hour ago",
+        "expected": "Taken",
+        "predicted": "Taken",
+        "correct": true,
+        "latency_ms": 15333.1
+      },
+      {
+        "transcript": "Already did that, dear",
+        "expected": "Taken",
+        "predicted": "Taken",
+        "correct": true,
+        "latency_ms": 12638.8
+      },
+      {
+        "transcript": "Consider it done",
+        "expected": "Taken",
+        "predicted": "Taken",
+        "correct": true,
+        "latency_ms": 27189.1
+      },
+      {
+        "transcript": "I had my tablets with some water just now",
+        "expected": "Taken",
+        "predicted": "Taken",
+        "correct": true,
+        "latency_ms": 20453.1
+      },
+      {
+        "transcript": "Yes, washed it down already",
+        "expected": "Taken",
+        "predicted": "Taken",
+        "correct": true,
+        "latency_ms": 13726.0
+      },
+      {
+        "transcript": "Took my medicine right on schedule",
+        "expected": "Taken",
+        "predicted": "Taken",
+        "correct": true,
+        "latency_ms": 14409.2
+      },
+      {
+        "transcript": "I remembered this time, took it",
+        "expected": "Taken",
+        "predicted": "Taken",
+        "correct": true,
+        "latency_ms": 15626.7
+      },
+      {
+        "transcript": "Just swallowed the last one",
+        "expected": "Taken",
+        "predicted": "Taken",
+        "correct": true,
+        "latency_ms": 18861.4
+      },
+      {
+        "transcript": "No, I won't take it",
+        "expected": "Refused",
+        "predicted": "Refused",
+        "correct": true,
+        "latency_ms": 16795.6
+      },
+      {
+        "transcript": "I refuse to take those pills",
+        "expected": "Refused",
+        "predicted": "Refused",
+        "correct": true,
+        "latency_ms": 17449.8
+      },
+      {
+        "transcript": "I don't want to take it",
+        "expected": "Refused",
+        "predicted": "Refused",
+        "correct": true,
+        "latency_ms": 15142.7
+      },
+      {
+        "transcript": "No I will not take another dose",
+        "expected": "Refused",
+        "predicted": "Refused",
+        "correct": true,
+        "latency_ms": 18037.2
+      },
+      {
+        "transcript": "I'm not taking that today",
+        "expected": "Refused",
+        "predicted": "Refused",
+        "correct": true,
+        "latency_ms": 16651.6
+      },
+      {
+        "transcript": "Absolutely not, I don't like how it makes me feel",
+        "expected": "Refused",
+        "predicted": "Refused",
+        "correct": true,
+        "latency_ms": 16025.2
+      },
+      {
+        "transcript": "No thank you, I'll pass on that one",
+        "expected": "Refused",
+        "predicted": "Refused",
+        "correct": true,
+        "latency_ms": 8686.9
+      },
+      {
+        "transcript": "I've decided I'm done with those pills",
+        "expected": "Refused",
+        "predicted": "Refused",
+        "correct": true,
+        "latency_ms": 14715.6
+      },
+      {
+        "transcript": "Not interested, no",
+        "expected": "Refused",
+        "predicted": "Refused",
+        "correct": true,
+        "latency_ms": 14944.5
+      },
+      {
+        "transcript": "I won't be taking my medicine tonight",
+        "expected": "Refused",
+        "predicted": "Refused",
+        "correct": true,
+        "latency_ms": 23326.0
+      },
+      {
+        "transcript": "I don't think so, not today",
+        "expected": "Refused",
+        "predicted": "Confused",
+        "correct": false,
+        "latency_ms": 30002.1
+      },
+      {
+        "transcript": "No way, that pill upsets my stomach",
+        "expected": "Refused",
+        "predicted": "Refused",
+        "correct": true,
+        "latency_ms": 25674.5
+      },
+      {
+        "transcript": "I'm skipping this one on purpose",
+        "expected": "Refused",
+        "predicted": "Refused",
+        "correct": true,
+        "latency_ms": 11871.0
+      },
+      {
+        "transcript": "I said no already",
+        "expected": "Refused",
+        "predicted": "Refused",
+        "correct": true,
+        "latency_ms": 17839.1
+      },
+      {
+        "transcript": "I'd rather not, thank you",
+        "expected": "Refused",
+        "predicted": "Refused",
+        "correct": true,
+        "latency_ms": 10436.3
+      },
+      {
+        "transcript": "Nope, not touching those",
+        "expected": "Refused",
+        "predicted": "Refused",
+        "correct": true,
+        "latency_ms": 14028.9
+      },
+      {
+        "transcript": "I'm choosing not to take it",
+        "expected": "Refused",
+        "predicted": "Refused",
+        "correct": true,
+        "latency_ms": 16614.2
+      },
+      {
+        "transcript": "No dice, I don't want it",
+        "expected": "Refused",
+        "predicted": "Refused",
+        "correct": true,
+        "latency_ms": 15175.9
+      },
+      {
+        "transcript": "I'm refusing my medication today",
+        "expected": "Refused",
+        "predicted": "Refused",
+        "correct": true,
+        "latency_ms": 15361.1
+      },
+      {
+        "transcript": "Not now, not ever with that one",
+        "expected": "Refused",
+        "predicted": "Refused",
+        "correct": true,
+        "latency_ms": 21863.2
+      },
+      {
+        "transcript": "I will take it later",
+        "expected": "Delayed",
+        "predicted": "Delayed",
+        "correct": true,
+        "latency_ms": 14960.3
+      },
+      {
+        "transcript": "Not yet, remind me in an hour",
+        "expected": "Delayed",
+        "predicted": "Delayed",
+        "correct": true,
+        "latency_ms": 23426.7
+      },
+      {
+        "transcript": "I'll take them after lunch",
+        "expected": "Delayed",
+        "predicted": "Delayed",
+        "correct": true,
+        "latency_ms": 23151.6
+      },
+      {
+        "transcript": "Wait, maybe later soon",
+        "expected": "Delayed",
+        "predicted": "Delayed",
+        "correct": true,
+        "latency_ms": 14702.5
+      },
+      {
+        "transcript": "Give me a bit, I'll get to it",
+        "expected": "Delayed",
+        "predicted": "Delayed",
+        "correct": true,
+        "latency_ms": 21701.2
+      },
+      {
+        "transcript": "In a little while, I promise",
+        "expected": "Delayed",
+        "predicted": "Delayed",
+        "correct": true,
+        "latency_ms": 17686.7
+      },
+      {
+        "transcript": "Let me finish my show first",
+        "expected": "Delayed",
+        "predicted": "Delayed",
+        "correct": true,
+        "latency_ms": 20706.9
+      },
+      {
+        "transcript": "I'll take it once I'm done eating",
+        "expected": "Delayed",
+        "predicted": "Confused",
+        "correct": false,
+        "latency_ms": 30002.3
+      },
+      {
+        "transcript": "Later on, not right now",
+        "expected": "Delayed",
+        "predicted": "Delayed",
+        "correct": true,
+        "latency_ms": 24111.9
+      },
+      {
+        "transcript": "Ask me again after my nap",
+        "expected": "Delayed",
+        "predicted": "Delayed",
+        "correct": true,
+        "latency_ms": 10543.2
+      },
+      {
+        "transcript": "I'm not ready yet, soon though",
+        "expected": "Delayed",
+        "predicted": "Delayed",
+        "correct": true,
+        "latency_ms": 12880.1
+      },
+      {
+        "transcript": "Hold that thought, I'll do it in a minute",
+        "expected": "Delayed",
+        "predicted": "Delayed",
+        "correct": true,
+        "latency_ms": 16920.9
+      },
+      {
+        "transcript": "I'll get to it in a bit",
+        "expected": "Delayed",
+        "predicted": "Delayed",
+        "correct": true,
+        "latency_ms": 18201.9
+      },
+      {
+        "transcript": "After I walk the dog",
+        "expected": "Delayed",
+        "predicted": "Delayed",
+        "correct": true,
+        "latency_ms": 19414.9
+      },
+      {
+        "transcript": "Not this second, but soon",
+        "expected": "Delayed",
+        "predicted": "Delayed",
+        "correct": true,
+        "latency_ms": 8822.9
+      },
+      {
+        "transcript": "I'll take it before bed instead",
+        "expected": "Delayed",
+        "predicted": "Delayed",
+        "correct": true,
+        "latency_ms": 20439.9
+      },
+      {
+        "transcript": "Give me an hour or so",
+        "expected": "Delayed",
+        "predicted": "Delayed",
+        "correct": true,
+        "latency_ms": 14067.1
+      },
+      {
+        "transcript": "I want to eat something first",
+        "expected": "Delayed",
+        "predicted": "Delayed",
+        "correct": true,
+        "latency_ms": 8419.9
+      },
+      {
+        "transcript": "Later today, I haven't forgotten",
+        "expected": "Delayed",
+        "predicted": "Delayed",
+        "correct": true,
+        "latency_ms": 21615.9
+      },
+      {
+        "transcript": "I'll do it once my daughter calls",
+        "expected": "Delayed",
+        "predicted": "Delayed",
+        "correct": true,
+        "latency_ms": 17400.6
+      },
+      {
+        "transcript": "I'm not sure which pill to take",
+        "expected": "Confused",
+        "predicted": "Confused",
+        "correct": true,
+        "latency_ms": 18398.6
+      },
+      {
+        "transcript": "I'm confused about the medication",
+        "expected": "Confused",
+        "predicted": "Confused",
+        "correct": true,
+        "latency_ms": 12291.1
+      },
+      {
+        "transcript": "I don't know what I should do",
+        "expected": "Confused",
+        "predicted": "Confused",
+        "correct": true,
+        "latency_ms": 17382.3
+      },
+      {
+        "transcript": "Which one am I supposed to take again?",
+        "expected": "Confused",
+        "predicted": "Confused",
+        "correct": true,
+        "latency_ms": 14461.7
+      },
+      {
+        "transcript": "I forgot which pill goes with breakfast",
+        "expected": "Confused",
+        "predicted": "Confused",
+        "correct": true,
+        "latency_ms": 24004.1
+      },
+      {
+        "transcript": "I'm not sure what these are for",
+        "expected": "Confused",
+        "predicted": "Confused",
+        "correct": true,
+        "latency_ms": 16476.3
+      },
+      {
+        "transcript": "Wait, is this the same one as yesterday?",
+        "expected": "Confused",
+        "predicted": "Confused",
+        "correct": true,
+        "latency_ms": 15205.3
+      },
+      {
+        "transcript": "I can't remember if I already took something",
+        "expected": "Confused",
+        "predicted": "Confused",
+        "correct": true,
+        "latency_ms": 28259.8
+      },
+      {
+        "transcript": "There are so many pills, I don't know",
+        "expected": "Confused",
+        "predicted": "Confused",
+        "correct": true,
+        "latency_ms": 15401.7
+      },
+      {
+        "transcript": "What is this white one again?",
+        "expected": "Confused",
+        "predicted": "Confused",
+        "correct": true,
+        "latency_ms": 16903.4
+      },
+      {
+        "transcript": "I don't understand the instructions",
+        "expected": "Confused",
+        "predicted": "Confused",
+        "correct": true,
+        "latency_ms": 14732.2
+      },
+      {
+        "transcript": "Is it the little blue one or the big one?",
+        "expected": "Confused",
+        "predicted": "Confused",
+        "correct": true,
+        "latency_ms": 15362.6
+      },
+      {
+        "transcript": "I'm mixed up about my schedule",
+        "expected": "Confused",
+        "predicted": "Confused",
+        "correct": true,
+        "latency_ms": 17267.6
+      },
+      {
+        "transcript": "Did the doctor say morning or night for this?",
+        "expected": "Confused",
+        "predicted": "Confused",
+        "correct": true,
+        "latency_ms": 19670.7
+      },
+      {
+        "transcript": "I'm lost, which bottle is it",
+        "expected": "Confused",
+        "predicted": "Confused",
+        "correct": true,
+        "latency_ms": 17420.3
+      },
+      {
+        "transcript": "Hmm, I can't tell these apart",
+        "expected": "Confused",
+        "predicted": "Confused",
+        "correct": true,
+        "latency_ms": 18056.1
+      },
+      {
+        "transcript": "I don't remember what I'm supposed to do",
+        "expected": "Confused",
+        "predicted": "Confused",
+        "correct": true,
+        "latency_ms": 17346.2
+      },
+      {
+        "transcript": "Something's not right, I'm not sure what to do",
+        "expected": "Confused",
+        "predicted": "Confused",
+        "correct": true,
+        "latency_ms": 29500.4
+      },
+      {
+        "transcript": "I keep getting them mixed up",
+        "expected": "Confused",
+        "predicted": "Confused",
+        "correct": true,
+        "latency_ms": 19454.8
+      },
+      {
+        "transcript": "Not sure honestly, can you remind me",
+        "expected": "Confused",
+        "predicted": "Confused",
+        "correct": true,
+        "latency_ms": 16166.6
+      },
+      {
+        "transcript": "I'm scared and it hurts",
+        "expected": "Distress",
+        "predicted": "Distress",
+        "correct": true,
+        "latency_ms": 14825.3
+      },
+      {
+        "transcript": "Please help, I fell",
+        "expected": "Distress",
+        "predicted": "Distress",
+        "correct": true,
+        "latency_ms": 25643.1
+      },
+      {
+        "transcript": "I have chest pain, emergency",
+        "expected": "Distress",
+        "predicted": "Distress",
+        "correct": true,
+        "latency_ms": 15267.5
+      },
+      {
+        "transcript": "I don't feel right, something is wrong",
+        "expected": "Distress",
+        "predicted": "Distress",
+        "correct": true,
+        "latency_ms": 14697.6
+      },
+      {
+        "transcript": "I'm in so much pain right now",
+        "expected": "Distress",
+        "predicted": "Distress",
+        "correct": true,
+        "latency_ms": 23927.0
+      },
+      {
+        "transcript": "Help me, I can't breathe",
+        "expected": "Distress",
+        "predicted": "Distress",
+        "correct": true,
+        "latency_ms": 14701.0
+      },
+      {
+        "transcript": "I'm really scared, please call someone",
+        "expected": "Distress",
+        "predicted": "Distress",
+        "correct": true,
+        "latency_ms": 14790.3
+      },
+      {
+        "transcript": "Everything hurts, I'm afraid",
+        "expected": "Distress",
+        "predicted": "Distress",
+        "correct": true,
+        "latency_ms": 22623.9
+      },
+      {
+        "transcript": "I think something bad is happening",
+        "expected": "Distress",
+        "predicted": "Distress",
+        "correct": true,
+        "latency_ms": 18743.8
+      },
+      {
+        "transcript": "My heart is racing and I'm frightened",
+        "expected": "Distress",
+        "predicted": "Distress",
+        "correct": true,
+        "latency_ms": 17529.6
+      },
+      {
+        "transcript": "I need help right now",
+        "expected": "Distress",
+        "predicted": "Distress",
+        "correct": true,
+        "latency_ms": 16093.9
+      },
+      {
+        "transcript": "I'm dizzy and scared",
+        "expected": "Distress",
+        "predicted": "Distress",
+        "correct": true,
+        "latency_ms": 16588.9
+      },
+      {
+        "transcript": "This is an emergency, please",
+        "expected": "Distress",
+        "predicted": "Distress",
+        "correct": true,
+        "latency_ms": 14845.0
+      },
+      {
+        "transcript": "I fell down and I can't get up",
+        "expected": "Distress",
+        "predicted": "Distress",
+        "correct": true,
+        "latency_ms": 16844.7
+      },
+      {
+        "transcript": "I'm in terrible pain",
+        "expected": "Distress",
+        "predicted": "Distress",
+        "correct": true,
+        "latency_ms": 16205.6
+      },
+      {
+        "transcript": "Something feels very wrong",
+        "expected": "Distress",
+        "predicted": "Distress",
+        "correct": true,
+        "latency_ms": 17602.1
+      },
+      {
+        "transcript": "I'm frightened, this doesn't feel normal",
+        "expected": "Distress",
+        "predicted": "Distress",
+        "correct": true,
+        "latency_ms": 16692.0
+      },
+      {
+        "transcript": "Please, I really need help",
+        "expected": "Distress",
+        "predicted": "Distress",
+        "correct": true,
+        "latency_ms": 24409.9
+      },
+      {
+        "transcript": "I can't feel my arm, I'm scared",
+        "expected": "Distress",
+        "predicted": "Distress",
+        "correct": true,
+        "latency_ms": 22446.9
+      },
+      {
+        "transcript": "It hurts so much, please help me",
+        "expected": "Distress",
+        "predicted": "Distress",
+        "correct": true,
+        "latency_ms": 17450.0
+      }
+    ]
+  }
+}

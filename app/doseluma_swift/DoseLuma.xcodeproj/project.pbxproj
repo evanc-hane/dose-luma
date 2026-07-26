@@ -1,0 +1,1241 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		12F6D42364F7BD39BD8046B0 /* LiveKit in Frameworks */ = {isa = PBXBuildFile; productRef = 15EFB61AC348FF17C67DA6C3 /* LiveKit */; };
+		16FD98CA2F808A7D0092B15C /* SECURITY.md in Resources */ = {isa = PBXBuildFile; fileRef = 16FD98C92F808A7D0092B15C /* SECURITY.md */; };
+		7305E0232F2057920030E3E9 /* DoseLuma Watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 7305E0222F2057920030E3E9 /* DoseLuma Watch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9A3AAD1D8A99EAEA9861F9C8 /* LiveKit in Frameworks */ = {isa = PBXBuildFile; productRef = A36A3F95D7142255432E73B3 /* LiveKit */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7305E00D2F2057920030E3E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7305DFF72F2057900030E3E9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7305DFFE2F2057900030E3E9;
+			remoteInfo = DoseLuma;
+		};
+		7305E0172F2057920030E3E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7305DFF72F2057900030E3E9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7305DFFE2F2057900030E3E9;
+			remoteInfo = DoseLuma;
+		};
+		7305E0242F2057920030E3E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7305DFF72F2057900030E3E9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7305E0212F2057920030E3E9;
+			remoteInfo = "DoseLuma Watch App";
+		};
+		7305E0322F2057930030E3E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7305DFF72F2057900030E3E9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7305E0212F2057920030E3E9;
+			remoteInfo = "DoseLuma Watch App";
+		};
+		7305E03C2F2057930030E3E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7305DFF72F2057900030E3E9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7305E0212F2057920030E3E9;
+			remoteInfo = "DoseLuma Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7305E0482F2057930030E3E9 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				7305E0232F2057920030E3E9 /* DoseLuma Watch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		16FD98C72F808A510092B15C /* PushNotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationManager.swift; sourceTree = "<group>"; };
+		16FD98C92F808A7D0092B15C /* SECURITY.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = SECURITY.md; sourceTree = "<group>"; };
+		7305DFFF2F2057900030E3E9 /* DoseLuma IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DoseLuma IOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7305E00C2F2057920030E3E9 /* DoseLumaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DoseLumaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7305E0162F2057920030E3E9 /* DoseLumaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DoseLumaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7305E0222F2057920030E3E9 /* DoseLuma Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DoseLuma Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7305E0312F2057930030E3E9 /* DoseLuma Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DoseLuma Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7305E03B2F2057930030E3E9 /* DoseLuma Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DoseLuma Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		73B7A9172F71BFD0001F7C30 /* DoseLuma-IOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "DoseLuma-IOS-Info.plist"; sourceTree = "<group>"; };
+		AA01E0012F20A0000030E3E9 /* DoseLuma.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = DoseLuma.app; path = DoseLuma.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		8FB1B53AED006CD2E31442C6 /* Exceptions for "DoseLuma" folder in "DoseLuma macOS" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				DoseLumaApp.swift,
+				Views/OCRScannerView.swift,
+				Views/PillScannerView.swift,
+				Assets.xcassets,
+				DoseLuma.entitlements,
+			);
+			target = AA01E0062F20A0000030E3E9 /* DoseLuma macOS */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		7305E0012F2057900030E3E9 /* DoseLuma */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				8FB1B53AED006CD2E31442C6 /* Exceptions for "DoseLuma" folder in "DoseLuma macOS" target */,
+			);
+			path = DoseLuma;
+			sourceTree = "<group>";
+		};
+		7305E00F2F2057920030E3E9 /* DoseLumaTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+			);
+			path = DoseLumaTests;
+			sourceTree = "<group>";
+		};
+		7305E0192F2057920030E3E9 /* DoseLumaUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+			);
+			path = DoseLumaUITests;
+			sourceTree = "<group>";
+		};
+		7305E0262F2057920030E3E9 /* DoseLuma Watch App */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+			);
+			path = "DoseLuma Watch App";
+			sourceTree = "<group>";
+		};
+		7305E0342F2057930030E3E9 /* DoseLuma Watch AppTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+			);
+			path = "DoseLuma Watch AppTests";
+			sourceTree = "<group>";
+		};
+		7305E03E2F2057930030E3E9 /* DoseLuma Watch AppUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+			);
+			path = "DoseLuma Watch AppUITests";
+			sourceTree = "<group>";
+		};
+		AA01E0022F20A0000030E3E9 /* DoseLuma */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+			);
+			path = DoseLuma;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7305DFFC2F2057900030E3E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A3AAD1D8A99EAEA9861F9C8 /* LiveKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7305E0092F2057920030E3E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7305E0132F2057920030E3E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7305E01F2F2057920030E3E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7305E02E2F2057930030E3E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7305E0382F2057930030E3E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA01E0042F20A0000030E3E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12F6D42364F7BD39BD8046B0 /* LiveKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7305DFF62F2057900030E3E9 = {
+			isa = PBXGroup;
+			children = (
+				7305E0002F2057900030E3E9 /* Products */,
+				16FD98C92F808A7D0092B15C /* SECURITY.md */,
+				DBB8F09C51A7A9FF47D39E2B /* ios */,
+				AA8B4F90FC152D5929038A17 /* macos */,
+				9770C3220104591E01F1FE23 /* watchos */,
+			);
+			sourceTree = "<group>";
+		};
+		7305E0002F2057900030E3E9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7305DFFF2F2057900030E3E9 /* DoseLuma IOS.app */,
+				7305E00C2F2057920030E3E9 /* DoseLumaTests.xctest */,
+				7305E0162F2057920030E3E9 /* DoseLumaUITests.xctest */,
+				7305E0222F2057920030E3E9 /* DoseLuma Watch.app */,
+				7305E0312F2057930030E3E9 /* DoseLuma Watch AppTests.xctest */,
+				7305E03B2F2057930030E3E9 /* DoseLuma Watch AppUITests.xctest */,
+				AA01E0012F20A0000030E3E9 /* DoseLuma.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9770C3220104591E01F1FE23 /* watchos */ = {
+			isa = PBXGroup;
+			children = (
+				7305E0262F2057920030E3E9 /* DoseLuma Watch App */,
+				7305E0342F2057930030E3E9 /* DoseLuma Watch AppTests */,
+				7305E03E2F2057930030E3E9 /* DoseLuma Watch AppUITests */,
+			);
+			name = watchos;
+			path = watchos;
+			sourceTree = "<group>";
+		};
+		AA8B4F90FC152D5929038A17 /* macos */ = {
+			isa = PBXGroup;
+			children = (
+				AA01E0022F20A0000030E3E9 /* DoseLuma */,
+				16FD98C72F808A510092B15C /* PushNotificationManager.swift */,
+			);
+			name = macos;
+			path = macos;
+			sourceTree = "<group>";
+		};
+		DBB8F09C51A7A9FF47D39E2B /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				7305E0012F2057900030E3E9 /* DoseLuma */,
+				7305E00F2F2057920030E3E9 /* DoseLumaTests */,
+				7305E0192F2057920030E3E9 /* DoseLumaUITests */,
+				73B7A9172F71BFD0001F7C30 /* DoseLuma-IOS-Info.plist */,
+			);
+			name = ios;
+			path = ios;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7305DFFE2F2057900030E3E9 /* DoseLuma IOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7305E0492F2057930030E3E9 /* Build configuration list for PBXNativeTarget "DoseLuma IOS" */;
+			buildPhases = (
+				7305DFFB2F2057900030E3E9 /* Sources */,
+				7305DFFC2F2057900030E3E9 /* Frameworks */,
+				7305DFFD2F2057900030E3E9 /* Resources */,
+				7305E0482F2057930030E3E9 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7305E0252F2057920030E3E9 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				7305E0012F2057900030E3E9 /* DoseLuma */,
+			);
+			name = "DoseLuma IOS";
+			packageProductDependencies = (
+				A36A3F95D7142255432E73B3 /* LiveKit */,
+			);
+			productName = DoseLuma;
+			productReference = 7305DFFF2F2057900030E3E9 /* DoseLuma IOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7305E00B2F2057920030E3E9 /* DoseLumaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7305E04C2F2057930030E3E9 /* Build configuration list for PBXNativeTarget "DoseLumaTests" */;
+			buildPhases = (
+				7305E0082F2057920030E3E9 /* Sources */,
+				7305E0092F2057920030E3E9 /* Frameworks */,
+				7305E00A2F2057920030E3E9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7305E00E2F2057920030E3E9 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				7305E00F2F2057920030E3E9 /* DoseLumaTests */,
+			);
+			name = DoseLumaTests;
+			productName = DoseLumaTests;
+			productReference = 7305E00C2F2057920030E3E9 /* DoseLumaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7305E0152F2057920030E3E9 /* DoseLumaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7305E04F2F2057930030E3E9 /* Build configuration list for PBXNativeTarget "DoseLumaUITests" */;
+			buildPhases = (
+				7305E0122F2057920030E3E9 /* Sources */,
+				7305E0132F2057920030E3E9 /* Frameworks */,
+				7305E0142F2057920030E3E9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7305E0182F2057920030E3E9 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				7305E0192F2057920030E3E9 /* DoseLumaUITests */,
+			);
+			name = DoseLumaUITests;
+			productName = DoseLumaUITests;
+			productReference = 7305E0162F2057920030E3E9 /* DoseLumaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		7305E0212F2057920030E3E9 /* DoseLuma Watch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7305E0452F2057930030E3E9 /* Build configuration list for PBXNativeTarget "DoseLuma Watch" */;
+			buildPhases = (
+				7305E01E2F2057920030E3E9 /* Sources */,
+				7305E01F2F2057920030E3E9 /* Frameworks */,
+				7305E0202F2057920030E3E9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				7305E0262F2057920030E3E9 /* DoseLuma Watch App */,
+			);
+			name = "DoseLuma Watch";
+			productName = "DoseLuma Watch App";
+			productReference = 7305E0222F2057920030E3E9 /* DoseLuma Watch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7305E0302F2057930030E3E9 /* DoseLuma Watch AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7305E0522F2057930030E3E9 /* Build configuration list for PBXNativeTarget "DoseLuma Watch AppTests" */;
+			buildPhases = (
+				7305E02D2F2057930030E3E9 /* Sources */,
+				7305E02E2F2057930030E3E9 /* Frameworks */,
+				7305E02F2F2057930030E3E9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7305E0332F2057930030E3E9 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				7305E0342F2057930030E3E9 /* DoseLuma Watch AppTests */,
+			);
+			name = "DoseLuma Watch AppTests";
+			productName = "DoseLuma Watch AppTests";
+			productReference = 7305E0312F2057930030E3E9 /* DoseLuma Watch AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7305E03A2F2057930030E3E9 /* DoseLuma Watch AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7305E0552F2057930030E3E9 /* Build configuration list for PBXNativeTarget "DoseLuma Watch AppUITests" */;
+			buildPhases = (
+				7305E0372F2057930030E3E9 /* Sources */,
+				7305E0382F2057930030E3E9 /* Frameworks */,
+				7305E0392F2057930030E3E9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7305E03D2F2057930030E3E9 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				7305E03E2F2057930030E3E9 /* DoseLuma Watch AppUITests */,
+			);
+			name = "DoseLuma Watch AppUITests";
+			productName = "DoseLuma Watch AppUITests";
+			productReference = 7305E03B2F2057930030E3E9 /* DoseLuma Watch AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		AA01E0062F20A0000030E3E9 /* DoseLuma macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA01E0092F20A0000030E3E9 /* Build configuration list for PBXNativeTarget "DoseLuma macOS" */;
+			buildPhases = (
+				AA01E0032F20A0000030E3E9 /* Sources */,
+				AA01E0042F20A0000030E3E9 /* Frameworks */,
+				AA01E0052F20A0000030E3E9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				AA01E0022F20A0000030E3E9 /* DoseLuma */,
+				7305E0012F2057900030E3E9 /* DoseLuma */,
+			);
+			name = "DoseLuma macOS";
+			packageProductDependencies = (
+				15EFB61AC348FF17C67DA6C3 /* LiveKit */,
+			);
+			productName = "DoseLuma macOS";
+			productReference = AA01E0012F20A0000030E3E9 /* DoseLuma.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7305DFF72F2057900030E3E9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2620;
+				LastUpgradeCheck = 2630;
+				TargetAttributes = {
+					7305DFFE2F2057900030E3E9 = {
+						CreatedOnToolsVersion = 26.2;
+					};
+					7305E00B2F2057920030E3E9 = {
+						CreatedOnToolsVersion = 26.2;
+						TestTargetID = 7305DFFE2F2057900030E3E9;
+					};
+					7305E0152F2057920030E3E9 = {
+						CreatedOnToolsVersion = 26.2;
+						TestTargetID = 7305DFFE2F2057900030E3E9;
+					};
+					7305E0212F2057920030E3E9 = {
+						CreatedOnToolsVersion = 26.2;
+					};
+					7305E0302F2057930030E3E9 = {
+						CreatedOnToolsVersion = 26.2;
+						TestTargetID = 7305E0212F2057920030E3E9;
+					};
+					7305E03A2F2057930030E3E9 = {
+						CreatedOnToolsVersion = 26.2;
+						TestTargetID = 7305E0212F2057920030E3E9;
+					};
+					AA01E0062F20A0000030E3E9 = {
+						CreatedOnToolsVersion = 26.2;
+					};
+				};
+			};
+			buildConfigurationList = 7305DFFA2F2057900030E3E9 /* Build configuration list for PBXProject "DoseLuma" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7305DFF62F2057900030E3E9;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				B98F8D5198E1F052B0C63373 /* XCRemoteSwiftPackageReference "client-sdk-swift" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 7305E0002F2057900030E3E9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7305DFFE2F2057900030E3E9 /* DoseLuma IOS */,
+				7305E00B2F2057920030E3E9 /* DoseLumaTests */,
+				7305E0152F2057920030E3E9 /* DoseLumaUITests */,
+				7305E0212F2057920030E3E9 /* DoseLuma Watch */,
+				7305E0302F2057930030E3E9 /* DoseLuma Watch AppTests */,
+				7305E03A2F2057930030E3E9 /* DoseLuma Watch AppUITests */,
+				AA01E0062F20A0000030E3E9 /* DoseLuma macOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7305DFFD2F2057900030E3E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16FD98CA2F808A7D0092B15C /* SECURITY.md in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7305E00A2F2057920030E3E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7305E0142F2057920030E3E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7305E0202F2057920030E3E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7305E02F2F2057930030E3E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7305E0392F2057930030E3E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA01E0052F20A0000030E3E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7305DFFB2F2057900030E3E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7305E0082F2057920030E3E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7305E0122F2057920030E3E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7305E01E2F2057920030E3E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7305E02D2F2057930030E3E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7305E0372F2057930030E3E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA01E0032F20A0000030E3E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7305E00E2F2057920030E3E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7305DFFE2F2057900030E3E9 /* DoseLuma IOS */;
+			targetProxy = 7305E00D2F2057920030E3E9 /* PBXContainerItemProxy */;
+		};
+		7305E0182F2057920030E3E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7305DFFE2F2057900030E3E9 /* DoseLuma IOS */;
+			targetProxy = 7305E0172F2057920030E3E9 /* PBXContainerItemProxy */;
+		};
+		7305E0252F2057920030E3E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7305E0212F2057920030E3E9 /* DoseLuma Watch */;
+			targetProxy = 7305E0242F2057920030E3E9 /* PBXContainerItemProxy */;
+		};
+		7305E0332F2057930030E3E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7305E0212F2057920030E3E9 /* DoseLuma Watch */;
+			targetProxy = 7305E0322F2057930030E3E9 /* PBXContainerItemProxy */;
+		};
+		7305E03D2F2057930030E3E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7305E0212F2057920030E3E9 /* DoseLuma Watch */;
+			targetProxy = 7305E03C2F2057930030E3E9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		7305E0432F2057930030E3E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 9K9YUDAC9J;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7305E0442F2057930030E3E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 9K9YUDAC9J;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		7305E0462F2057930030E3E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "watchos/DoseLuma Watch App/DoseLuma Watch App.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3SL74TT4YD;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = DoseLuma;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "DoseLuma reads heart rate, SpO2, and HRV from Apple Watch to display live vitals.";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.doseluma.app;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.doseluma.app.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		7305E0472F2057930030E3E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "watchos/DoseLuma Watch App/DoseLuma Watch App.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3SL74TT4YD;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = DoseLuma;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "DoseLuma reads heart rate, SpO2, and HRV from Apple Watch to display live vitals.";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.doseluma.app;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.doseluma.app.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
+		7305E04A2F2057930030E3E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ios/DoseLuma/DoseLuma.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3SL74TT4YD;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "ios/DoseLuma-IOS-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = DoseLuma;
+				INFOPLIST_KEY_NSCameraUsageDescription = "DoseLuma uses the camera to scan medication labels for OCR-based identity verification.";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "DoseLuma reads heart rate, SpO2, and HRV data from Apple Health to display your latest vitals.";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "DoseLuma connects to your self-hosted server on the local network to sync medication and vitals data.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.doseluma.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7305E04B2F2057930030E3E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ios/DoseLuma/DoseLuma.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3SL74TT4YD;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "ios/DoseLuma-IOS-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = DoseLuma;
+				INFOPLIST_KEY_NSCameraUsageDescription = "DoseLuma uses the camera to scan medication labels for OCR-based identity verification.";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "DoseLuma reads heart rate, SpO2, and HRV data from Apple Health to display your latest vitals.";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "DoseLuma connects to your self-hosted server on the local network to sync medication and vitals data.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.doseluma.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7305E04D2F2057930030E3E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3SL74TT4YD;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.doseluma.app.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DoseLuma.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DoseLuma";
+			};
+			name = Debug;
+		};
+		7305E04E2F2057930030E3E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3SL74TT4YD;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.doseluma.app.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DoseLuma.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DoseLuma";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7305E0502F2057930030E3E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3SL74TT4YD;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.doseluma.app.uitests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DoseLuma;
+			};
+			name = Debug;
+		};
+		7305E0512F2057930030E3E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3SL74TT4YD;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.doseluma.app.uitests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DoseLuma;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7305E0532F2057930030E3E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3SL74TT4YD;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.doseluma.app.watchkitapp.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DoseLuma Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DoseLuma Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		7305E0542F2057930030E3E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3SL74TT4YD;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.doseluma.app.watchkitapp.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DoseLuma Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DoseLuma Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
+		7305E0562F2057930030E3E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3SL74TT4YD;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.doseluma.app.watchkitapp.uitests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "DoseLuma Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		7305E0572F2057930030E3E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3SL74TT4YD;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.doseluma.app.watchkitapp.uitests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "DoseLuma Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
+		AA01E0072F20A0000030E3E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macos/DoseLuma/DoseLuma.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = 3SL74TT4YD;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = DoseLuma;
+				INFOPLIST_KEY_NSMainStoryboardFile = "";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "DoseLuma uses the microphone so you can talk with the ALI voice assistant.";
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.doseluma.server;
+				PRODUCT_NAME = DoseLuma;
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		AA01E0082F20A0000030E3E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macos/DoseLuma/DoseLuma.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = 3SL74TT4YD;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = DoseLuma;
+				INFOPLIST_KEY_NSMainStoryboardFile = "";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "DoseLuma uses the microphone so you can talk with the ALI voice assistant.";
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.doseluma.server;
+				PRODUCT_NAME = DoseLuma;
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7305DFFA2F2057900030E3E9 /* Build configuration list for PBXProject "DoseLuma" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7305E0432F2057930030E3E9 /* Debug */,
+				7305E0442F2057930030E3E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7305E0452F2057930030E3E9 /* Build configuration list for PBXNativeTarget "DoseLuma Watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7305E0462F2057930030E3E9 /* Debug */,
+				7305E0472F2057930030E3E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7305E0492F2057930030E3E9 /* Build configuration list for PBXNativeTarget "DoseLuma IOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7305E04A2F2057930030E3E9 /* Debug */,
+				7305E04B2F2057930030E3E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7305E04C2F2057930030E3E9 /* Build configuration list for PBXNativeTarget "DoseLumaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7305E04D2F2057930030E3E9 /* Debug */,
+				7305E04E2F2057930030E3E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7305E04F2F2057930030E3E9 /* Build configuration list for PBXNativeTarget "DoseLumaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7305E0502F2057930030E3E9 /* Debug */,
+				7305E0512F2057930030E3E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7305E0522F2057930030E3E9 /* Build configuration list for PBXNativeTarget "DoseLuma Watch AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7305E0532F2057930030E3E9 /* Debug */,
+				7305E0542F2057930030E3E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7305E0552F2057930030E3E9 /* Build configuration list for PBXNativeTarget "DoseLuma Watch AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7305E0562F2057930030E3E9 /* Debug */,
+				7305E0572F2057930030E3E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA01E0092F20A0000030E3E9 /* Build configuration list for PBXNativeTarget "DoseLuma macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA01E0072F20A0000030E3E9 /* Debug */,
+				AA01E0082F20A0000030E3E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B98F8D5198E1F052B0C63373 /* XCRemoteSwiftPackageReference "client-sdk-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/livekit/client-sdk-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		15EFB61AC348FF17C67DA6C3 /* LiveKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B98F8D5198E1F052B0C63373 /* XCRemoteSwiftPackageReference "client-sdk-swift" */;
+			productName = LiveKit;
+		};
+		A36A3F95D7142255432E73B3 /* LiveKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B98F8D5198E1F052B0C63373 /* XCRemoteSwiftPackageReference "client-sdk-swift" */;
+			productName = LiveKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 7305DFF72F2057900030E3E9 /* Project object */;
+}
