@@ -10,10 +10,12 @@ they all share this one on-disk database file.
 
 from __future__ import annotations
 
+import os
 import sqlite3
 from pathlib import Path
 
-DB_PATH = Path(__file__).resolve().parent / "doseluma.db"
+_DEFAULT_DB_PATH = Path(__file__).resolve().parent / "doseluma.db"
+DB_PATH = Path(os.getenv("DOSELUMA_DB_PATH", str(_DEFAULT_DB_PATH))).expanduser()
 
 _SCHEMA = """
 CREATE TABLE IF NOT EXISTS reminders_settings (
@@ -141,6 +143,7 @@ def get_connection() -> sqlite3.Connection:
     `mock.patch.object(db, "DB_PATH", tmp_path)` the same way they used to
     patch each module's old `_STORE_PATH`.
     """
+    DB_PATH.parent.mkdir(parents=True, exist_ok=True)
     conn = sqlite3.connect(DB_PATH)
     conn.row_factory = sqlite3.Row
     conn.execute("PRAGMA foreign_keys = ON")

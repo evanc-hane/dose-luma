@@ -48,8 +48,19 @@ services:
       - DEBUG=False
       - WEB_SERVER_DISABLED=1
       - MODEL_CONFIG_PATH=/config/config.json
+      - DOSELUMA_DB_PATH=/data/doseluma.db
     volumes:
       - ./config.json:/config/config.json:ro
+      - doseluma-data:/data
+    healthcheck:
+      test:
+        - CMD
+        - python
+        - -c
+        - "import urllib.request; urllib.request.urlopen('http://localhost:8801/api/health')"
+      interval: 10s
+      timeout: 3s
+      retries: 5
 
   # Real-time STT -> LLM -> TTS worker.
   agent:
@@ -57,8 +68,10 @@ services:
       context: ./app
       dockerfile: agent/Dockerfile
     depends_on:
-      - livekit
-      - backend
+      livekit:
+        condition: service_started
+      backend:
+        condition: service_healthy
     environment:
       - LIVEKIT_URL=ws://livekit:7880
       - LIVEKIT_API_KEY=devkey
@@ -74,3 +87,4 @@ services:
 
 volumes:
   speaches-cache:
+  doseluma-data:

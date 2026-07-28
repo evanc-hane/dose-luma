@@ -3,7 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 import os
 from dotenv import load_dotenv
 import logging
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 
 from livekit_integration.service import livekit_service
 import config
@@ -31,7 +31,9 @@ app = FastAPI(
 )
 
 # Add CORS middleware for mobile app - restrict to localhost in dev, specific domains in prod
-allowed_origins = os.getenv("ALLOWED_ORIGINS", "http://localhost:*,http://127.0.0.1:*").split(",")
+allowed_origins = os.getenv(
+    "ALLOWED_ORIGINS", "http://localhost:3000,http://127.0.0.1:3000"
+).split(",")
 app.add_middleware(
     CORSMiddleware,
     allow_origins=allowed_origins,
@@ -122,14 +124,16 @@ class MedicationEntry(BaseModel):
 
 class RemindersBody(BaseModel):
     enabled: bool = True
-    medications: list[MedicationEntry] = [
-        MedicationEntry(name="Reminder 1", time="08:00"),
-        MedicationEntry(name="Reminder 2", time="08:05"),
-        MedicationEntry(name="Reminder 3", time="08:10"),
-        MedicationEntry(name="Reminder 4", time="08:15"),
-        MedicationEntry(name="Reminder 5", time="08:20"),
-        MedicationEntry(name="Reminder 6", time="08:25"),
-    ]
+    medications: list[MedicationEntry] = Field(
+        default_factory=lambda: [
+            MedicationEntry(name="Reminder 1", time="08:00"),
+            MedicationEntry(name="Reminder 2", time="08:05"),
+            MedicationEntry(name="Reminder 3", time="08:10"),
+            MedicationEntry(name="Reminder 4", time="08:15"),
+            MedicationEntry(name="Reminder 5", time="08:20"),
+            MedicationEntry(name="Reminder 6", time="08:25"),
+        ]
+    )
 
 
 @app.get("/api/reminders")

@@ -2,12 +2,10 @@ FROM python:3.11-slim
 
 WORKDIR /app
 
-# Install uv
-RUN pip install uv
-
-# Reuse the backend Python project (shared deps + config.py)
+# Pin uv, then reuse the backend project with the voice-agent extra.
+RUN pip install --no-cache-dir uv==0.11.33
 COPY backend/pyproject.toml backend/uv.lock ./
-RUN uv sync --no-dev
+RUN uv sync --locked --no-dev --extra agent
 
 COPY backend/config.py ./
 COPY agent/voice_agent.py ./

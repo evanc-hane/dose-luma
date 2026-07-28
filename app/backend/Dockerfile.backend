@@ -2,14 +2,14 @@ FROM python:3.11-slim
 
 WORKDIR /app
 
-# Install uv
-RUN pip install uv
+# Pin the environment tool so container builds remain reproducible.
+RUN pip install --no-cache-dir uv==0.11.33
 
 # Copy dependencies
 COPY pyproject.toml uv.lock ./
 
 # Install Python dependencies
-RUN uv sync --no-dev
+RUN uv sync --locked --no-dev
 
 # Copy backend code
 COPY . .

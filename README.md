@@ -88,7 +88,7 @@ These numbers are regression results, not clinical-performance claims. The fixtu
 `-- docker-compose.yml          # Local service topology
 ```
 
-## Run the backend
+## Run with Docker
 
 Prerequisites: Docker Desktop and Docker Compose.
 
@@ -104,10 +104,34 @@ Useful endpoints:
 - Health probe: `http://localhost:8801/api/health`
 - LiveKit signaling: `ws://localhost:7880`
 
-For backend-only development with a local LiveKit server:
+SQLite state is stored in the named `doseluma-data` volume and survives
+container restarts. The health, reminder, adherence, and synchronization APIs
+run without external model credentials; configured voice providers require
+their matching keys.
+
+For backend and LiveKit only:
 
 ```bash
 docker compose up --build livekit backend
+```
+
+## Run the backend locally
+
+Prerequisites: Python 3.10 or newer and
+[uv](https://docs.astral.sh/uv/getting-started/installation/).
+
+```bash
+cd app/backend
+uv sync --locked --no-dev
+uv run uvicorn index:app --host 0.0.0.0 --port 8801
+```
+
+The base backend install intentionally excludes the voice worker's larger
+dependency set. To develop the real-time agent as well:
+
+```bash
+uv sync --locked --extra agent
+uv run python ../agent/voice_agent.py dev
 ```
 
 ## Run tests and evaluation
@@ -131,6 +155,8 @@ The default benchmark evaluates the deterministic fallback without requiring an 
 
 ## Roadmap
 
+- Replace prototype name-based sessions with production authentication and
+  authorization before handling real user data.
 - Collect a held-out, consented speech dataset with transcription noise and Canadian accent diversity.
 - Add confidence calibration, abstention thresholds, and out-of-distribution detection.
 - Track prompt/model versions and production quality metrics in an experiment registry.
