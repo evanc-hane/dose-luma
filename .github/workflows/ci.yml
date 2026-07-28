@@ -31,3 +31,5 @@ jobs:
       - uses: actions/checkout@v4
       - name: Validate Docker Compose
         run: docker compose config --quiet
+      - name: Build backend and voice-agent images
+        run: docker compose build backend agent
