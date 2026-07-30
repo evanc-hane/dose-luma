@@ -95,7 +95,7 @@ struct OCRScannerView: View {
                 maxSelectionCount: 5,
                 matching: .images
             )
-            .onChange(of: selectedPhotos) { newValue in
+            .onChange(of: selectedPhotos) { _, newValue in
                 guard !newValue.isEmpty else { return }
                 processMultiplePhotos(newValue)
             }

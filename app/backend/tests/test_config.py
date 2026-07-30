@@ -2,7 +2,6 @@
 
 from __future__ import annotations
 
-import importlib
 import json
 import sys
 import unittest
@@ -56,11 +55,11 @@ class TestRootConfigJson(unittest.TestCase):
 
 class TestConfigModule(unittest.TestCase):
     def setUp(self) -> None:
-        if "config" in sys.modules:
-            del sys.modules["config"]
+        # Keep the shared module object intact so mocks held by other test
+        # modules continue to target the same config instance.
         import config as config_module
 
-        self.config = importlib.reload(config_module)
+        self.config = config_module
         self.config.load_config.cache_clear()
 
     def tearDown(self) -> None:

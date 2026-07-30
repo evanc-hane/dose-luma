@@ -67,22 +67,22 @@ struct MedicationListView: View {
                         .padding()
                     #endif
                 }
-                .onChange(of: scannedLabelText) { newValue in
+                .onChange(of: scannedLabelText) { _, newValue in
                     if shouldAutoShowAdd, newValue != nil {
                         path.append(.new)
                         shouldAutoShowAdd = false
                     }
                 }
-                .onChange(of: scannedPillAnalysis) { newValue in
+                .onChange(of: scannedPillAnalysis) { _, newValue in
                     if shouldAutoShowAdd, newValue != nil {
                         path.append(.new)
                         shouldAutoShowAdd = false
                     }
                 }
-                .onChange(of: showScanLabel) { isPresenting in
+                .onChange(of: showScanLabel) { _, isPresenting in
                     if isPresenting { shouldAutoShowAdd = true }
                 }
-                .onChange(of: showScanPill) { isPresenting in
+                .onChange(of: showScanPill) { _, isPresenting in
                     if isPresenting { shouldAutoShowAdd = true }
                 }
         }

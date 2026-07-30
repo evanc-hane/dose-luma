@@ -58,6 +58,10 @@ flowchart LR
 
 The backend owns schedules, adherence state, token issuance, alerts, and synchronization. Vision inference runs on-device; model providers and credentials remain behind the service boundary. See [Architecture](docs/ARCHITECTURE.md) for component and failure-mode details.
 
+Upstream fixes are reviewed and ported selectively because DoseLuma has an
+independent history and product identity. See
+[Upstream synchronization](docs/UPSTREAM_SYNC.md) for the reviewed baseline.
+
 ## Evaluation snapshot
 
 The deterministic fallback is measured on a versioned set of 100 synthetic medication-adherence utterances:

@@ -77,10 +77,10 @@ struct MainTabView: View {
                 }
                 SyncService.shared.updateVisibleScreen(screenName(for: selectedTab))
             }
-            .onChange(of: selectedTab) { newValue in
+            .onChange(of: selectedTab) { _, newValue in
                 SyncService.shared.updateVisibleScreen(screenName(for: newValue))
             }
-            .onChange(of: backendClient.pendingCheckIn) { checkIn in
+            .onChange(of: backendClient.pendingCheckIn) { _, checkIn in
                 // Scheduled check-in fired server-side (scheduler.py) and the
                 // agent is already in the room — jump to Voice and join it,
                 // same as if the patient had pressed the call button.

@@ -112,6 +112,13 @@ struct TimeWindowCard: View {
     private var pendingMeds: [Medication] { store.pendingMedications(for: window) }
     private var isActive:    Bool         { window.isCurrent(at: now) }
 
+    // Missed doses have a status and therefore are not pending. Keep them
+    // separate so a completed window with missed medication is not shown as
+    // successfully completed.
+    private var missedMeds: [Medication] {
+        allMeds.filter { store.status(for: $0, window: window) == .missed }
+    }
+
     var body: some View {
         VStack(alignment: .leading, spacing: 14) {
             // Header row
@@ -161,6 +168,13 @@ struct TimeWindowCard: View {
                     }
                     .buttonStyle(.borderedProminent)
                     .tint(window.color)
+                } else if !missedMeds.isEmpty {
+                    Label(
+                        "\(missedMeds.count) medication\(missedMeds.count == 1 ? "" : "s") missed",
+                        systemImage: "xmark.circle.fill"
+                    )
+                    .foregroundStyle(.red)
+                    .font(.subheadline)
                 } else {
                     Label("All medications taken", systemImage: "checkmark.circle.fill")
                         .foregroundStyle(.green)

@@ -1,5 +1,4 @@
 import Combine
-import Combine
 import Foundation
 import UserNotifications
 
@@ -290,11 +289,16 @@ final class NotificationManager: NSObject, @unchecked Sendable {
         return (totalMinutes / 60, totalMinutes % 60)
     }
 
+    /// Identifies medication reminders that should start the DoseLuma voice
+    /// session when tapped. Caregiver alerts intentionally omit this marker.
+    private static let voiceReminderKey = "doseluma.voiceReminder"
+
     private func add(id: String, title: String, body: String, hour: Int, minute: Int) {
         let content = UNMutableNotificationContent()
         content.title = title
         content.body  = body
         content.sound = .default
+        content.userInfo = [Self.voiceReminderKey: true]
         var dc = DateComponents()
         dc.hour   = hour
         dc.minute = minute
@@ -315,5 +319,18 @@ extension NotificationManager: UNUserNotificationCenterDelegate {
         withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void
     ) {
         completionHandler([.banner, .sound, .list])
+    }
+
+    func userNotificationCenter(
+        _ center: UNUserNotificationCenter,
+        didReceive response: UNNotificationResponse,
+        withCompletionHandler completionHandler: @escaping () -> Void
+    ) {
+        if response.notification.request.content.userInfo[Self.voiceReminderKey] as? Bool == true {
+            Task { @MainActor in
+                VoiceSessionModel.shared.start()
+            }
+        }
+        completionHandler()
     }
 }
